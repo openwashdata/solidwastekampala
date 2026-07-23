@@ -1,6 +1,6 @@
 Package: solidwastekampala
 Title: Quantity and Composition of Domestic Solid Waste in Kampala City
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person(given = "Alex Y.", family = "Katukiza", role = "aut"),
     person(given = "Charles B.", family = "Niwagaba", email = "cbniwagaba@gmail.com",
@@ -38,7 +38,7 @@ Depends:
 LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
-Date: 2026-07-23
+Date: 2026-07-24
 URL: https://github.com/openwashdata/solidwastekampala,
     https://openwashdata.github.io/solidwastekampala/
 BugReports: https://github.com/openwashdata/solidwastekampala/issues

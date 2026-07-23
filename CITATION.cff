@@ -9,7 +9,7 @@ type: software
 license: CC-BY-4.0
 title: 'solidwastekampala: Quantity and Composition of Domestic Solid Waste in Kampala
   City'
-version: 0.0.0.9000
+version: 1.0.0
 abstract: Domestic solid waste generation and composition data for 103 households
   in Kampala City, Uganda, collected over a seven-day measurement campaign in three
   parishes representing different income levels (Bwaise I, low income; Bukoto I, middle
@@ -45,7 +45,7 @@ authors:
   orcid: https://orcid.org/0000-0002-3317-7318
 repository-code: https://github.com/openwashdata/solidwastekampala
 url: https://openwashdata.github.io/solidwastekampala/
-date-released: '2026-07-23'
+date-released: '2026-07-24'
 contact:
 - family-names: Schöbitz
   given-names: Lars
