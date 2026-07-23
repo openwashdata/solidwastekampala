@@ -46,6 +46,12 @@ A tibble with 103 rows and 37 variables
 \item{density_kg_l}{Bulk density of the generated waste, in kilograms per litre; multiply by 1000 for kg/m3 as reported in the manuscript.}
 }
 }
+\source{
+Data collected by the study team of Katukiza et al. (Makerere
+University) for the manuscript "Quantity and Composition of Domestic
+Solid Waste in Kampala City as Influenced by Socio-Economic Factors".
+Raw workbook preserved in \code{data-raw/data_sheets_with_analysis.xlsx}.
+}
 \usage{
 solidwastekampala
 }
@@ -57,5 +63,10 @@ the 103 analyzed households the data record socio-economic
 characteristics, the measured mass of ten waste categories, and the
 derived per-household metrics (total, per-day, per-capita, volume, and
 density).
+}
+\examples{
+head(solidwastekampala)
+summary(solidwastekampala$waste_per_capita_kg)
+table(solidwastekampala$income_level)
 }
 \keyword{datasets}

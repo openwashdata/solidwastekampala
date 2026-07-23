@@ -205,3 +205,39 @@ A tibble with 103 rows and 37 variables
 
   Bulk density of the generated waste, in kilograms per litre; multiply
   by 1000 for kg/m3 as reported in the manuscript.
+
+## Source
+
+Data collected by the study team of Katukiza et al. (Makerere
+University) for the manuscript "Quantity and Composition of Domestic
+Solid Waste in Kampala City as Influenced by Socio-Economic Factors".
+Raw workbook preserved in `data-raw/data_sheets_with_analysis.xlsx`.
+
+## Examples
+
+``` r
+head(solidwastekampala)
+#> # A tibble: 6 × 37
+#>      id household_id division parish   zone     income_level occupants age_head
+#>   <int> <chr>        <chr>    <chr>    <chr>    <ord>            <int> <ord>   
+#> 1     1 Household_1  Kawempe  Bwaise I Lubagge  low                  3 18-35   
+#> 2     2 Household_2  Kawempe  Bwaise I Lubagge  low                  7 36-60   
+#> 3     3 Household_3  Kawempe  Bwaise I Lubagge  low                  6 36-60   
+#> 4     4 Household_5  Kawempe  Bwaise I Bubajjwe low                 11 >60     
+#> 5     5 Household_6  Kawempe  Bwaise I Bubajjwe low                  2 18-35   
+#> 6     6 Household_7  Kawempe  Bwaise I Bubajjwe low                  7 18-35   
+#> # ℹ 29 more variables: gender_head <chr>, education_head <ord>,
+#> #   profession_head <chr>, monthly_income_ugx <ord>, respondent <chr>,
+#> #   period_of_stay <ord>, occupancy <chr>, housing_quality <chr>,
+#> #   roof_material <chr>, wall_material <chr>, floor_material <chr>,
+#> #   water_access <chr>, sanitation_facility <chr>, road_condition <chr>,
+#> #   waste_food_kg <dbl>, waste_garden_kg <dbl>, waste_wood_kg <dbl>,
+#> #   waste_textiles_kg <dbl>, waste_paper_kg <dbl>, waste_polythene_kg <dbl>, …
+summary(solidwastekampala$waste_per_capita_kg)
+#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#> 0.01629 0.30652 0.57279 0.62972 0.82521 1.94374 
+table(solidwastekampala$income_level)
+#> 
+#>    low middle   high 
+#>     39     32     32 
+```

@@ -4,15 +4,20 @@ Version: 0.0.0.9000
 Authors@R: c(
     person(given = "Alex Y.", family = "Katukiza", role = "aut"),
     person(given = "Charles B.", family = "Niwagaba", email = "cbniwagaba@gmail.com",
-           role = "aut"),
-    person(given = "Ivan", family = "Feni", role = "aut"),
+           role = "aut", comment = c(ORCID = "0000-0003-1494-1939")),
+    person(given = "Ivan", family = "Feni", role = "aut",
+           comment = c(ORCID = "0009-0003-2012-0421")),
     person(given = "Shaluwa", family = "Namagembe", role = "aut"),
-    person(given = "Swaib", family = "Semiyaga", role = "aut"),
-    person(given = "Abubakkar", family = "Batte", role = "aut"),
-    person(given = "Musa", family = "Manga", role = "aut"),
+    person(given = "Swaib", family = "Semiyaga", role = "aut",
+           comment = c(ORCID = "0000-0002-9795-4964")),
+    person(given = "Abubakkar", family = "Batte", role = "aut",
+           comment = c(ORCID = "0009-0003-5230-7506")),
+    person(given = "Musa", family = "Manga", role = "aut",
+           comment = c(ORCID = "0000-0002-3317-7318")),
     person(given = "Lars", family = "Schöbitz", email = "lars@lse.de",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-2196-5015"))
+           comment = c(ORCID = "0000-0003-2196-5015")),
+    person("Global Health Engineering, ETH Zurich", role = "fnd")
   )
 Description: Domestic solid waste generation and composition data for 103
     households in Kampala City, Uganda, collected over a seven-day
@@ -33,5 +38,6 @@ LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
 Date: 2026-07-23
-URL: https://github.com/openwashdata/solidwastekampala
+URL: https://github.com/openwashdata/solidwastekampala,
+    https://openwashdata.github.io/solidwastekampala/
 BugReports: https://github.com/openwashdata/solidwastekampala/issues
