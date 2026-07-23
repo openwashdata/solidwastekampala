@@ -29,19 +29,20 @@ authors:
   orcid: https://orcid.org/0009-0003-2012-0421
 - family-names: Namagembe
   given-names: Shaluwa
+  orcid: https://orcid.org/0009-0009-5131-736X
 - family-names: Semiyaga
   given-names: Swaib
   orcid: https://orcid.org/0000-0002-9795-4964
 - family-names: Batte
-  given-names: Abubakkar
+  given-names: Abubakar
   orcid: https://orcid.org/0009-0003-5230-7506
-- family-names: Manga
-  given-names: Musa
-  orcid: https://orcid.org/0000-0002-3317-7318
 - family-names: Schöbitz
   given-names: Lars
   email: lars@lse.de
   orcid: https://orcid.org/0000-0003-2196-5015
+- family-names: Manga
+  given-names: Musa
+  orcid: https://orcid.org/0000-0002-3317-7318
 repository-code: https://github.com/openwashdata/solidwastekampala
 url: https://openwashdata.github.io/solidwastekampala/
 date-released: '2026-07-23'

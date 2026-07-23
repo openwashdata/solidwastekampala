@@ -7,16 +7,17 @@ Authors@R: c(
            role = "aut", comment = c(ORCID = "0000-0003-1494-1939")),
     person(given = "Ivan", family = "Feni", role = "aut",
            comment = c(ORCID = "0009-0003-2012-0421")),
-    person(given = "Shaluwa", family = "Namagembe", role = "aut"),
+    person(given = "Shaluwa", family = "Namagembe", role = "aut",
+           comment = c(ORCID = "0009-0009-5131-736X")),
     person(given = "Swaib", family = "Semiyaga", role = "aut",
            comment = c(ORCID = "0000-0002-9795-4964")),
-    person(given = "Abubakkar", family = "Batte", role = "aut",
+    person(given = "Abubakar", family = "Batte", role = "aut",
            comment = c(ORCID = "0009-0003-5230-7506")),
-    person(given = "Musa", family = "Manga", role = "aut",
-           comment = c(ORCID = "0000-0002-3317-7318")),
     person(given = "Lars", family = "Schöbitz", email = "lars@lse.de",
            role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2196-5015")),
+    person(given = "Musa", family = "Manga", role = "aut",
+           comment = c(ORCID = "0000-0002-3317-7318")),
     person("Global Health Engineering, ETH Zurich", role = "fnd")
   )
 Description: Domestic solid waste generation and composition data for 103
