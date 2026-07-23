@@ -1,14 +1,37 @@
 Package: solidwastekampala
-Title: What the Package Does (One Line, Title Case)
+Title: Quantity and Composition of Domestic Solid Waste in Kampala City
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person(given = "Alex Y.", family = "Katukiza", role = "aut"),
+    person(given = "Charles B.", family = "Niwagaba", email = "cbniwagaba@gmail.com",
+           role = "aut"),
+    person(given = "Ivan", family = "Feni", role = "aut"),
+    person(given = "Shaluwa", family = "Namagembe", role = "aut"),
+    person(given = "Swaib", family = "Semiyaga", role = "aut"),
+    person(given = "Abubakkar", family = "Batte", role = "aut"),
+    person(given = "Musa", family = "Manga", role = "aut"),
+    person(given = "Lars", family = "Schöbitz", email = "lars@lse.de",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2196-5015"))
+  )
+Description: Domestic solid waste generation and composition data for 103
+    households in Kampala City, Uganda, collected over a seven-day
+    measurement campaign in three parishes representing different income
+    levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high
+    income). Includes ten measured waste-category masses, derived
+    per-household metrics, and household socio-economic characteristics.
+    The data accompany the manuscript "Quantity and Composition of
+    Domestic Solid Waste in Kampala City as Influenced by Socio-Economic
+    Factors" (Katukiza et al., Makerere University).
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 Depends: 
     R (>= 3.5)
 LazyData: true
+Language: en-GB
+Config/Needs/website: rmarkdown
+Date: 2026-07-23
+URL: https://github.com/openwashdata/solidwastekampala
+BugReports: https://github.com/openwashdata/solidwastekampala/issues

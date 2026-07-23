@@ -4,3 +4,9 @@
 ^plans$
 ^prompts$
 ^context$
+^LICENSE\.md$
+^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^data/metadata$

@@ -1,0 +1,3 @@
+fileName,name,contentUrl,encodingFormat
+solidwastekampala.csv,solidwastekampala,https://raw.githubusercontent.com/openwashdata/solidwastekampala/main/inst/extdata/solidwastekampala.csv,csv
+solidwastekampala.xlsx,solidwastekampala,https://raw.githubusercontent.com/openwashdata/solidwastekampala/main/inst/extdata/solidwastekampala.xlsx,xlsx

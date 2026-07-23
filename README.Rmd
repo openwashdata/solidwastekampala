@@ -1,0 +1,167 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# solidwastekampala
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The goal of solidwastekampala is to provide the household-level data
+behind the manuscript "Quantity and Composition of Domestic Solid Waste
+in Kampala City as Influenced by Socio-Economic Factors" (Katukiza et
+al., Makerere University): a seven-day domestic solid waste
+characterisation of 103 households in three Kampala parishes
+representing low (Bwaise I), middle (Bukoto I), and high (Ggaba) income
+areas, together with the socio-economic characteristics of each
+household.
+
+## Installation
+
+You can install the development version of solidwastekampala from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/solidwastekampala")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in
+    your browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/solidwastekampala/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to one dataset with the waste measurements
+and socio-economic characteristics of the 103 analyzed households.
+
+```{r}
+library(solidwastekampala)
+```
+
+### solidwastekampala
+
+The dataset `solidwastekampala` contains the mass of ten waste
+categories collected from each household over a seven-day period, the
+derived per-household metrics (total, per-day, per-capita, volume, and
+density), and the socio-economic characteristics of the household and
+its dwelling. It has
+`r nrow(solidwastekampala)` observations and `r ncol(solidwastekampala)`
+variables
+
+```{r}
+solidwastekampala |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "solidwastekampala.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+The example reproduces the headline figures of the manuscript: mean
+per-capita waste generation and mean waste density by income level.
+
+```{r}
+library(solidwastekampala)
+library(dplyr)
+library(ggplot2)
+
+solidwastekampala |>
+  group_by(income_level) |>
+  summarise(
+    households = n(),
+    waste_kg_capita_day = round(mean(waste_per_capita_kg), 2),
+    density_kg_m3 = round(mean(density_kg_l) * 1000)
+  )
+```
+
+```{r boxplot-per-capita}
+ggplot(solidwastekampala,
+       aes(x = income_level, y = waste_per_capita_kg)) +
+  geom_boxplot() +
+  labs(
+    x = "Income level of study area",
+    y = "Waste generation (kg per person per day)",
+    title = "Per-capita waste generation by income level"
+  ) +
+  theme_minimal()
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/solidwastekampala/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("solidwastekampala")
+```
