@@ -72,55 +72,55 @@ solidwastekampala <- data_in |>
   mutate(id = row_number(), .before = 1) |>
   ## Two malformed IDs in Bukoto I
   mutate(
-    household_id = case_match(
+    household_id = recode_values(
       household_id,
       "Household__9" ~ "Household_9",
       "Househols_16" ~ "Household_16",
-      .default = household_id
+      default = household_id
     )
   ) |>
-  ## Harmonize categorical labels. Where a case_match() has no .default, the
+  ## Harmonize categorical labels. Where a recode_values() has no default, the
   ## listed values cover the whole column, so an unexpected value would surface
   ## as NA and fail the validation below.
   mutate(
-    division = case_match(
+    division = recode_values(
       division,
       "Kawenpe Division" ~ "Kawempe",
       "Makindye Division" ~ "Makindye",
-      .default = division
+      default = division
     ),
-    parish = case_match(
+    parish = recode_values(
       parish,
       "Bukoto 1" ~ "Bukoto I",
-      .default = parish
+      default = parish
     ),
-    income_level = case_match(
+    income_level = recode_values(
       income_level,
       "low-income" ~ "low",
       "Middle-Income" ~ "middle",
       "High-Income" ~ "high"
     ),
-    age_head = case_match(
+    age_head = recode_values(
       age_head,
       "18-35 years" ~ "18-35",
       "36-60 years" ~ "36-60",
       c("> 60 years", ">60 years") ~ ">60"
     ),
-    education_head = case_match(
+    education_head = recode_values(
       education_head,
       "IIIiterate" ~ "Illiterate",
       "Secondray" ~ "Secondary",
       "Tertairy" ~ "Tertiary",
-      .default = education_head
+      default = education_head
     ),
-    profession_head = case_match(
+    profession_head = recode_values(
       profession_head,
       "Busness" ~ "Business",
       "Government Employee" ~ "Government employee",
       "Private Employee" ~ "Private employee",
-      .default = profession_head
+      default = profession_head
     ),
-    monthly_income_ugx = case_match(
+    monthly_income_ugx = recode_values(
       monthly_income_ugx,
       "less than 500,000" ~ "<500,000",
       c(
@@ -128,65 +128,65 @@ solidwastekampala <- data_in |>
         "500,000-1,000-000", "500,000-1,0000,000", "500,0000-1,000,000"
       ) ~ "500,000-1,000,000",
       "1,000,000 - 3,000,000" ~ "1,000,000-3,000,000",
-      .default = monthly_income_ugx
+      default = monthly_income_ugx
     ),
     ## Niece/nephew follows the Codes-sheet taxonomy
-    respondent = case_match(
+    respondent = recode_values(
       respondent,
       c("Household Head", "Head") ~ "Household head",
       c("Son", "Daughter", "Son/Daughter") ~ "Son/daughter",
       "Niece" ~ "Niece/nephew",
-      .default = respondent
+      default = respondent
     ),
-    period_of_stay = case_match(
+    period_of_stay = recode_values(
       period_of_stay,
       c("< 1 year", "less than  ayear") ~ "<1 year",
       "> 5 years" ~ ">5 years",
-      .default = period_of_stay
+      default = period_of_stay
     ),
     ## Codes sheet: owner = 0; confirmed against All_data
-    occupancy = case_match(
+    occupancy = recode_values(
       occupancy,
       c("0", "Occupied by Owner") ~ "Occupied by owner",
-      .default = occupancy
+      default = occupancy
     ),
-    housing_quality = case_match(
+    housing_quality = recode_values(
       housing_quality,
       "Story Building" ~ "Story building",
-      .default = housing_quality
+      default = housing_quality
     ),
     ## The three-way split is kept; Bwaise I recorded only the combined
     ## "Iron sheets/tiles" category
-    roof_material = case_match(
+    roof_material = recode_values(
       roof_material,
       "Iron Sheets" ~ "Iron sheets",
       "Iron Sheets/titles" ~ "Iron sheets/tiles",
-      .default = roof_material
+      default = roof_material
     ),
-    wall_material = case_match(
+    wall_material = recode_values(
       wall_material,
       "bricks" ~ "Bricks",
       c("Blocks", "Concrete Blocks") ~ "Concrete blocks",
-      .default = wall_material
+      default = wall_material
     ),
-    water_access = case_match(
+    water_access = recode_values(
       water_access,
       c("House Connection", "Household Connetion") ~ "House connection",
       "Yard Tap" ~ "Yard tap",
       "Public Standpipe" ~ "Stand pipe",
-      .default = water_access
+      default = water_access
     ),
-    sanitation_facility = case_match(
+    sanitation_facility = recode_values(
       sanitation_facility,
       c("Shared", "shared Facilities", "Shared Facilities") ~
         "Shared facilities",
       c("Not Shared", "Not Shared Facilities", "Not Shared Faciltiies") ~
         "Not shared facilities"
     ),
-    road_condition = case_match(
+    road_condition = recode_values(
       road_condition,
       c("unpaved", "Unpaced") ~ "Unpaved",
-      .default = road_condition
+      default = road_condition
     )
   ) |>
   ## Ordered factors; nominal columns stay character
