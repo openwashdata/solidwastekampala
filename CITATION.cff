@@ -1,0 +1,53 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "solidwastekampala" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'solidwastekampala: Quantity and Composition of Domestic Solid Waste in Kampala
+  City'
+version: 0.0.0.9000
+abstract: Domestic solid waste generation and composition data for 103 households
+  in Kampala City, Uganda, collected over a seven-day measurement campaign in three
+  parishes representing different income levels (Bwaise I, low income; Bukoto I, middle
+  income; Ggaba, high income). Includes ten measured waste-category masses, derived
+  per-household metrics, and household socio-economic characteristics. The data accompany
+  the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City
+  as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).
+authors:
+- family-names: Katukiza
+  given-names: Alex Y.
+- family-names: Niwagaba
+  given-names: Charles B.
+  email: cbniwagaba@gmail.com
+  orcid: https://orcid.org/0000-0003-1494-1939
+- family-names: Feni
+  given-names: Ivan
+  orcid: https://orcid.org/0009-0003-2012-0421
+- family-names: Namagembe
+  given-names: Shaluwa
+- family-names: Semiyaga
+  given-names: Swaib
+  orcid: https://orcid.org/0000-0002-9795-4964
+- family-names: Batte
+  given-names: Abubakkar
+  orcid: https://orcid.org/0009-0003-5230-7506
+- family-names: Manga
+  given-names: Musa
+  orcid: https://orcid.org/0000-0002-3317-7318
+- family-names: Schöbitz
+  given-names: Lars
+  email: lars@lse.de
+  orcid: https://orcid.org/0000-0003-2196-5015
+repository-code: https://github.com/openwashdata/solidwastekampala
+url: https://openwashdata.github.io/solidwastekampala/
+date-released: '2026-07-23'
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lars@lse.de
+  orcid: https://orcid.org/0000-0003-2196-5015
+
