@@ -1,3 +1,6 @@
 ^solidwastekampala\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^plans$
+^prompts$
+^context$
