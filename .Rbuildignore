@@ -10,3 +10,5 @@
 ^docs$
 ^pkgdown$
 ^data/metadata$
+^CITATION\.cff$
+^CLAUDE\.md$
