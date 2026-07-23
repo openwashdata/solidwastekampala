@@ -16,7 +16,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-3317-7318")),
     person(given = "Lars", family = "Schöbitz", email = "lars@lse.de",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-2196-5015"))
+           comment = c(ORCID = "0000-0003-2196-5015")),
+    person("Global Health Engineering, ETH Zurich", role = "fnd")
   )
 Description: Domestic solid waste generation and composition data for 103
     households in Kampala City, Uganda, collected over a seven-day
