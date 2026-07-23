@@ -40,7 +40,7 @@ raw_names <- c(
 ## Sheet order matches the row numbering in the All_data sheet
 data_in <- c("Bwaise I", "Bukoto I", "Ggaba") |>
   map(\(sheet) read_excel(
-    here::here("data-raw", "Data Sheets with Analysis.xlsx"),
+    here::here("data-raw", "data_sheets_with_analysis.xlsx"),
     sheet = sheet,
     skip = 4,
     col_names = raw_names,
