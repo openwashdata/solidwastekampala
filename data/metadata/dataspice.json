@@ -1,0 +1,315 @@
+{
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "Quantity and Composition of Domestic Solid Waste in Kampala City",
+  "creator": [
+    {
+      "type": "Person",
+      "id": 1,
+      "email": null,
+      "affiliation": "Makerere University",
+      "name": "Alex Y. Katukiza"
+    },
+    {
+      "type": "Person",
+      "id": 2,
+      "email": "cbniwagaba@gmail.com",
+      "affiliation": "Makerere University",
+      "name": "Charles B. Niwagaba"
+    },
+    {
+      "type": "Person",
+      "id": 3,
+      "email": null,
+      "affiliation": "Makerere University",
+      "name": "Ivan Feni"
+    },
+    {
+      "type": "Person",
+      "id": 4,
+      "email": null,
+      "affiliation": "Makerere University",
+      "name": "Shaluwa Namagembe"
+    },
+    {
+      "type": "Person",
+      "id": 5,
+      "email": null,
+      "affiliation": "Makerere University",
+      "name": "Swaib Semiyaga"
+    },
+    {
+      "type": "Person",
+      "id": 6,
+      "email": null,
+      "affiliation": "Makerere University",
+      "name": "Abubakkar Batte"
+    },
+    {
+      "type": "Person",
+      "id": 7,
+      "email": null,
+      "affiliation": "University of North Carolina at Chapel Hill",
+      "name": "Musa Manga"
+    },
+    {
+      "type": "Person",
+      "id": 8,
+      "email": "lars@lse.de",
+      "affiliation": "openwashdata",
+      "name": "Lars Schöbitz"
+    }
+  ],
+  "description": "Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income), together with household socio-economic characteristics.",
+  "datePublished": "2026-07-23",
+  "keywords": ["solid waste", "waste generation", "waste composition", "household", "socio-economic factors", "Kampala", "Uganda"],
+  "funder": "https://ethrat.ch/en/eth-domain/open-research-data/",
+  "temporalCoverage": "NA/NA",
+  "license": "CC BY 4.0",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "Kampala City, Uganda; parishes Bwaise I (Kawempe Division), Bukoto I (Nakawa Division), and Ggaba (Makindye Division)",
+    "geo": {
+      "type": "GeoShape",
+      "box": "0.41 32.67 0.22 32.51"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "Package-level unique household identifier (1-103), following the row numbering of the All_data sheet in the raw workbook (Bwaise I, then Bukoto I, then Ggaba)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "household_id",
+      "description": "Household label as recorded on the area sheet (for example Household_7); values repeat across parishes and contain gaps, so id is the unique key."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "division",
+      "description": "Kampala City division the household is located in (Kawempe, Makindye, or Nakawa)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "parish",
+      "description": "Study parish the household is located in (Bwaise I = low income, Bukoto I = middle income, Ggaba = high income area)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "zone",
+      "description": "Administrative zone within the parish where the household is located."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "income_level",
+      "description": "Income level of the household's study area as classified in the study design; ordered factor with levels low < middle < high."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "occupants",
+      "description": "Number of people living in the household during the 7-day waste collection period."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "years",
+      "name": "age_head",
+      "description": "Age of the household head in years; ordered factor with levels 18-35 < 36-60 < >60."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "gender_head",
+      "description": "Gender of the household head (Female or Male)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "education_head",
+      "description": "Highest education level of the household head; ordered factor with levels Illiterate < Primary < Secondary < Tertiary."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "profession_head",
+      "description": "Profession of the household head (Business, Government employee, Housewife, Private employee, or Retired)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "UGX",
+      "name": "monthly_income_ugx",
+      "description": "Monthly household income band in Uganda shillings (UGX); ordered factor with levels <500,000 < 500,000-1,000,000 < 1,000,000-3,000,000 < >3,000,000."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "respondent",
+      "description": "Household member who answered the questionnaire (Household head, Spouse, Son/daughter, or Niece/nephew)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "years",
+      "name": "period_of_stay",
+      "description": "How long the household has lived at the premises; ordered factor with levels <1 year < 1-3 years < 3-5 years < >5 years."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "occupancy",
+      "description": "Occupancy status of the premises (Occupied by owner or Rented)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "housing_quality",
+      "description": "Type of dwelling as a proxy for housing quality (Bungalow, Story building, or Temporary)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "roof_material",
+      "description": "Main roof material of the dwelling (Cemented, Iron sheets, Iron sheets/tiles, or Tiles); Bwaise I recorded only the combined Iron sheets/tiles category."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "wall_material",
+      "description": "Main wall material of the dwelling (Bricks, Concrete blocks, or Mud/poles)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "floor_material",
+      "description": "Main floor material of the dwelling (Cemented, Mud, or Tiles)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "water_access",
+      "description": "Main drinking water access of the household (House connection, Stand pipe, or Yard tap)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sanitation_facility",
+      "description": "Whether the household's sanitation facility is shared with other households (Shared facilities or Not shared facilities)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "road_condition",
+      "description": "Condition of the access road to the household (Paved or Unpaved)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_food_kg",
+      "description": "Mass of food waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_garden_kg",
+      "description": "Mass of garden waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_wood_kg",
+      "description": "Mass of wood waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_textiles_kg",
+      "description": "Mass of textile waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_paper_kg",
+      "description": "Mass of paper waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_polythene_kg",
+      "description": "Mass of polythene waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_plastics_kg",
+      "description": "Mass of plastic waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_glass_kg",
+      "description": "Mass of glass waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_metals_kg",
+      "description": "Mass of metal waste generated by the household over the 7-day collection period, in kilograms (ASTM waste category); for Ggaba Household_7 the value 2.674 was stored as text in the raw sheet and is excluded from that household's recorded waste_total_kg."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_other_kg",
+      "description": "Mass of waste not covered by the other nine categories, generated by the household over the 7-day collection period, in kilograms (ASTM waste category)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg",
+      "name": "waste_total_kg",
+      "description": "Total mass of waste generated by the household over the 7-day collection period, in kilograms, as recorded in the raw sheet (SUM of the ten category columns)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg/day",
+      "name": "waste_per_day_kg",
+      "description": "Mean daily mass of waste generated by the household, in kilograms per day (waste_total_kg divided by 7)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg/person/day",
+      "name": "waste_per_capita_kg",
+      "description": "Mean daily mass of waste generated per household member, in kilograms per person per day (waste_per_day_kg divided by occupants)."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "L",
+      "name": "volume_l",
+      "description": "Volume of the waste generated by the household over the 7-day collection period, in litres."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kg/L",
+      "name": "density_kg_l",
+      "description": "Bulk density of the generated waste, in kilograms per litre; multiply by 1000 for kg/m3 as reported in the manuscript."
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "solidwastekampala",
+      "contentUrl": "https://raw.githubusercontent.com/openwashdata/solidwastekampala/main/inst/extdata/solidwastekampala.csv",
+      "encodingFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "solidwastekampala",
+      "contentUrl": "https://raw.githubusercontent.com/openwashdata/solidwastekampala/main/inst/extdata/solidwastekampala.xlsx",
+      "encodingFormat": "xlsx"
+    }
+  ]
+}
