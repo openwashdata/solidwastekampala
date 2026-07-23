@@ -9,6 +9,5 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-^data/metadata$
 ^CITATION\.cff$
 ^CLAUDE\.md$
