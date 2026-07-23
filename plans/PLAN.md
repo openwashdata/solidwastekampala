@@ -7,7 +7,7 @@ tracked as GitHub issues (one issue per step) and not yet executed.
 
 New openwashdata data package `solidwastekampala` at
 `/Users/lschoebitz/Documents/gitrepos/gh-org-openwashdata/data/solidwastekampala`.
-The raw dataset (`data-raw/Data Sheets with Analysis.xlsx`) accompanies the manuscript
+The raw dataset (`data-raw/data_sheets_with_analysis.xlsx`) accompanies the manuscript
 "Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by
 Socio-Economic Factors" (Katukiza et al., Makerere University): a 7-day household waste
 characterisation in three Kampala parishes (Bwaise I = low income, Bukoto I = middle,
