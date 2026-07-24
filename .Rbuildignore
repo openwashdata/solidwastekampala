@@ -3,6 +3,7 @@
 ^data-raw$
 ^plans$
 ^prompts$
+^blog$
 ^context$
 ^LICENSE\.md$
 ^README\.Rmd$
