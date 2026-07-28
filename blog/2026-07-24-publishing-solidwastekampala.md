@@ -24,7 +24,7 @@ On Thursday, 24 July at 00:18, the same repository carried version 1.0.0 of
 [`solidwastekampala`](https://github.com/openwashdata/solidwastekampala):
 a tidy, validated dataset of 103 households, a 37-variable data dictionary,
 roxygen documentation, a pkgdown website, schema.org metadata, a CITATION
-file with eight ORCID-linked authors, green CI on five platforms, and a
+file with ORCID-linked authors, green CI on five platforms, and a
 freshly minted Zenodo DOI:
 [10.5281/zenodo.21519797](https://doi.org/10.5281/zenodo.21519797).
 
@@ -169,8 +169,11 @@ has exactly zero), standard vocabularies where they exist.
 hours went: a dictionary describing all 37 variables with units; a fully
 reproducible processing script whose assertions double as a data-quality
 statement; documented — not hidden — source inconsistencies; a CC BY 4.0
-license; a citation with eight ORCID-verified authors in manuscript order;
-and CI that proves the package installs and the examples run.
+license; a citation listing the authors in manuscript order, seven of the
+eight carrying an ORCID iD checked against the public registry; and CI that
+proves the package installs and the examples run. (The eighth arrived
+later: Alex Y. Katukiza's iD was supplied by the main author on 28 July and
+added in a follow-up, so the released 1.0.0 shows seven.)
 
 And one layer the FAIR acronym doesn't name: **provenance of the process
 itself**. The repository archives every prompt verbatim in `prompts/`
