@@ -2,7 +2,8 @@ Package: solidwastekampala
 Title: Quantity and Composition of Domestic Solid Waste in Kampala City
 Version: 1.0.0
 Authors@R: c(
-    person(given = "Alex Y.", family = "Katukiza", role = "aut"),
+    person(given = "Alex Y.", family = "Katukiza", role = "aut",
+           comment = c(ORCID = "0000-0003-1774-8237")),
     person(given = "Charles B.", family = "Niwagaba", email = "cbniwagaba@gmail.com",
            role = "aut", comment = c(ORCID = "0000-0003-1494-1939")),
     person(given = "Ivan", family = "Feni", role = "aut",

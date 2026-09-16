@@ -33,11 +33,11 @@ the file to hide it.
 - Missing values are coded as `NA`, never as empty strings, “NULL”,
   “N/A”, or sentinel numbers such as -99.
 - After editing DESCRIPTION, run
-  [`washr::update_description()`](https://openwashdata-dev.github.io/washr/reference/update_description.html).
+  [`washr::update_description()`](https://openwashdata.github.io/washr/reference/update_description.html).
   Caveat (washr 1.0.1): it strips `Config/Needs/website` entries; diff
   DESCRIPTION after the call and restore anything it removed.
 - After version or author changes, run
-  [`washr::update_citation()`](https://openwashdata-dev.github.io/washr/reference/update_citation.html)
+  [`washr::update_citation()`](https://openwashdata.github.io/washr/reference/update_citation.html)
   so DESCRIPTION, CITATION.cff, and inst/CITATION stay in sync. Caveats
   (washr 1.0.1): the `doi` argument is required, so call it with the
   package DOI or `doi = NULL` before a DOI exists; with `doi = NULL` it
