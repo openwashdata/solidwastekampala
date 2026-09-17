@@ -1,4 +1,4 @@
-# solidwastekampala (development version)
+# solidwastekampala 1.0.1 (2026-09-17)
 
 * Added Alex Y. Katukiza's ORCID iD, verified against the public registry,
   so all eight authors now carry one in DESCRIPTION, CITATION.cff, and
