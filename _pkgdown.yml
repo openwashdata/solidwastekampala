@@ -32,3 +32,9 @@ reference:
   desc: "Access the solidwastekampala dataset"
   contents:
   - solidwastekampala
+
+articles:
+- title: "Articles"
+  navbar: ~
+  contents:
+  - articles/waste-per-person
