@@ -12,9 +12,10 @@
 <link href="deps/Source_Code_Pro-0.4.10/font.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Quantity and Composition of Domestic Solid Waste in Kampala City">
-<meta name="description" content='Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).'>
-<meta property="og:description" content='Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).'>
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
+<meta property="og:title" content="Quantity and Composition of Domestic Solid Waste in Kampala City">
+<meta name="description" content='Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the paper "Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors" (Katukiza et al. 2026, Frontiers in Environmental Science, &lt;doi:10.3389/fenvs.2026.1889921&gt;).'>
+<meta property="og:description" content='Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the paper "Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors" (Katukiza et al. 2026, Frontiers in Environmental Science, &lt;doi:10.3389/fenvs.2026.1889921&gt;).'>
 <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
@@ -25,7 +26,7 @@
 
     <a class="navbar-brand me-2" href="index.html">solidwastekampala</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,6 +36,12 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="articles/waste-per-person.html">Waste per person by income</a></li>
+  </ul>
+</li>
 <li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
@@ -54,15 +61,38 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>The solidwastekampala package provides the household-level data behind the manuscript “Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by Socio-Economic Factors” (Katukiza et al., Makerere University). Over a seven-day measurement campaign, the study team weighed the domestic solid waste generated by 103 households in three Kampala parishes selected to represent different income levels: Bwaise I (low), Bukoto I (middle), and Ggaba (high). Each record combines the measured mass of ten waste categories with derived per-household metrics and the socio-economic characteristics of the household and its dwelling. The package contains one analysis-ready dataset together with a full variable dictionary.</p>
+<p>The solidwastekampala package provides the household-level data behind the paper “Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors” by Katukiza et al. (2026), published in <em>Frontiers in Environmental Science</em> (<a href="https://doi.org/10.3389/fenvs.2026.1889921" class="external-link">doi:10.3389/fenvs.2026.1889921</a>). Over a seven-day measurement campaign, the study team weighed the domestic solid waste generated by 103 households in three Kampala parishes selected to represent different income levels: Bwaise I (low), Bukoto I (middle), and Ggaba (high). Each record combines the measured mass of ten waste categories with derived per-household metrics and the socio-economic characteristics of the household and its dwelling. The package contains one analysis-ready dataset together with a full variable dictionary.</p>
+<p><img src="reference/figures/README-dotplot-per-capita-1.png" alt="Dot plot of waste per person per day for 103 households in Kampala, one row per income level. The median rises from 0.32 kg in the low income parish to 0.57 kg in the middle income parish and 0.93 kg in the high income parish." width="100%" style="display: block; margin: auto;"></p>
+<div class="section level2">
+<h2 id="associated-publication">Associated publication<a class="anchor" aria-label="anchor" href="#associated-publication"></a>
+</h2>
+<p>If you use these data, please cite the paper they belong to:</p>
+<blockquote>
+<p>Katukiza, A. Y., Niwagaba, C. B., Feni, I., Namagembe, S., Semiyaga, S., Batte, A., &amp; Manga, M. (2026). Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors. <em>Frontiers in Environmental Science</em>, 14. <a href="https://doi.org/10.3389/fenvs.2026.1889921" class="external-link uri">https://doi.org/10.3389/fenvs.2026.1889921</a></p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">10</span>.<span class="ot">3389</span>/<span class="ot">fenvs</span>.<span class="ot">2026</span>.<span class="ot">1889921</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  <span class="dt">author</span>  = {Katukiza, Alex Y. and Niwagaba, Charles B. and Feni, Ivan and</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>             Namagembe, Shaluwa and Semiyaga, Swaib and Batte, Abubakar and</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>             Manga, Musa},</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>  <span class="dt">title</span>   = {Quantity and composition of domestic solid waste in Kampala</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>             City as influenced by socioeconomic factors},</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>  <span class="dt">journal</span> = {Frontiers in Environmental Science},</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>  <span class="dt">volume</span>  = {14},</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>  <span class="dt">year</span>    = {2026},</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>  <span class="dt">doi</span>     = {10.3389/fenvs.2026.1889921},</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>  <span class="dt">url</span>     = {https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2026.1889921},</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>  <span class="dt">issn</span>    = {2296-665X}</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>}</span></code></pre></div>
+<p>Please also cite the data package itself (see <a href="#citation">Citation</a>).</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can install the development version of solidwastekampala from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install-deprecated.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"openwashdata/solidwastekampala"</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Run the following code in console if you don't have the packages</span></span>
 <span><span class="co">## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
@@ -99,18 +129,18 @@
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
 <p>The package provides access to one dataset with the waste measurements and socio-economic characteristics of the 103 analyzed households.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/solidwastekampala" class="external-link">solidwastekampala</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="solidwastekampala-1">solidwastekampala<a class="anchor" aria-label="anchor" href="#solidwastekampala-1"></a>
 </h3>
 <p>The dataset <code>solidwastekampala</code> contains the mass of ten waste categories collected from each household over a seven-day period, the derived per-household metrics (total, per-day, per-capita, volume, and density), and the socio-economic characteristics of the household and its dwelling. It has 103 observations and 37 variables.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">solidwastekampala</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/gt.html" class="external-link">gt</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/as_raw_html.html" class="external-link">as_raw_html</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div id="orgkadfxxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="clxgjezxeo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
@@ -989,7 +1019,7 @@ density_kg_l
 numeric
 </td>
 <td style="text-align:left;">
-Bulk density of the generated waste, in kilograms per litre; multiply by 1000 for kg/m3 as reported in the manuscript.
+Bulk density of the generated waste, in kilograms per litre; multiply by 1000 for kg/m3 as reported in the paper.
 </td>
 </tr>
 </tbody>
@@ -1000,8 +1030,8 @@ Bulk density of the generated waste, in kilograms per litre; multiply by 1000 fo
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>The example reproduces the headline figures of the manuscript: mean per-capita waste generation and mean waste density by income level.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<p>The example reproduces the headline figures of the paper: mean per-capita waste generation and mean waste density by income level.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/solidwastekampala" class="external-link">solidwastekampala</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
@@ -1019,18 +1049,54 @@ Bulk density of the generated waste, in kilograms per litre; multiply by 1000 fo
 <span><span class="co">#&gt; 1 low                  39                0.43           368</span></span>
 <span><span class="co">#&gt; 2 middle               32                0.53           571</span></span>
 <span><span class="co">#&gt; 3 high                 32                0.98           325</span></span></code></pre></div>
-<p>The figure <code>boxplot-per-capita</code> below shows the distribution behind those means: per-capita waste generation rises with the income level of the study area, from 0.43 kg per person per day in Bwaise I (low) to 0.98 kg in Ggaba (high), where the spread across households is also widest.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">solidwastekampala</span>,</span>
-<span>       <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">income_level</span>, y <span class="op">=</span> <span class="va">waste_per_capita_kg</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html" class="external-link">geom_boxplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Income level of study area"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Waste generation (kg per person per day)"</span>,</span>
-<span>    title <span class="op">=</span> <span class="st">"Per-capita waste generation by income level"</span></span>
+<p>The figure at the top of this page shows the households behind those numbers, one dot per household. Waste per person rises with the income level of the study area: the median goes from 0.32 kg per person per day in Bwaise I (low) to 0.57 kg in Bukoto I (middle) and 0.93 kg in Ggaba (high), where the spread across households is also widest. The code below reproduces it. The article <a href="https://openwashdata.github.io/solidwastekampala/articles/waste-per-person.html">Waste per person by income</a> shows an interactive version of this chart.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">households</span> <span class="op">&lt;-</span> <span class="va">solidwastekampala</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span></span>
+<span>    title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span></span>
+<span>      <span class="fu">tools</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/tools/toTitleCase.html" class="external-link">toTitleCase</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="va">income_level</span><span class="op">)</span><span class="op">)</span>, <span class="st">" income ("</span>,</span>
+<span>      <span class="va">parish</span>, <span class="st">"), "</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html" class="external-link">n</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">" households"</span></span>
+<span>    <span class="op">)</span>,</span>
+<span>    .by <span class="op">=</span> <span class="va">income_level</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/reorder.factor.html" class="external-link">reorder</a></span><span class="op">(</span><span class="va">title</span>, <span class="fu"><a href="https://rdrr.io/r/base/integer.html" class="external-link">as.integer</a></span><span class="op">(</span><span class="va">income_level</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">medians</span> <span class="op">&lt;-</span> <span class="va">households</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>median <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/median.html" class="external-link">median</a></span><span class="op">(</span><span class="va">waste_per_capita_kg</span><span class="op">)</span>, .by <span class="op">=</span> <span class="va">title</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">households</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">waste_per_capita_kg</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_dotplot.html" class="external-link">geom_dotplot</a></span><span class="op">(</span></span>
+<span>    binwidth <span class="op">=</span> <span class="fl">0.035</span>, method <span class="op">=</span> <span class="st">"histodot"</span>, stackdir <span class="op">=</span> <span class="st">"center"</span>,</span>
+<span>    stackratio <span class="op">=</span> <span class="fl">1.1</span>, fill <span class="op">=</span> <span class="st">"#8a3a8a"</span>, colour <span class="op">=</span> <span class="st">"white"</span>, alpha <span class="op">=</span> <span class="fl">0.75</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-boxplot-per-capita-1.png" alt="" width="100%" style="display: block; margin: auto;"></p>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span></span>
+<span>    data <span class="op">=</span> <span class="va">medians</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="va">median</span><span class="op">)</span>,</span>
+<span>    colour <span class="op">=</span> <span class="st">"#b04208"</span>, linewidth <span class="op">=</span> <span class="fl">1</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_text</a></span><span class="op">(</span></span>
+<span>    data <span class="op">=</span> <span class="va">medians</span>,</span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span></span>
+<span>      x <span class="op">=</span> <span class="va">median</span>, y <span class="op">=</span> <span class="op">-</span><span class="fl">0.5</span>,</span>
+<span>      label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"median"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">median</span>, <span class="fl">2</span><span class="op">)</span>, <span class="st">"kg"</span><span class="op">)</span></span>
+<span>    <span class="op">)</span>,</span>
+<span>    colour <span class="op">=</span> <span class="st">"#b04208"</span>, fontface <span class="op">=</span> <span class="st">"bold"</span>, hjust <span class="op">=</span> <span class="op">-</span><span class="fl">0.05</span>, vjust <span class="op">=</span> <span class="fl">0</span>,</span>
+<span>    size <span class="op">=</span> <span class="fl">3.6</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span><span class="op">~</span> <span class="va">title</span>, ncol <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span><span class="op">)</span>, breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span>, <span class="fl">0.5</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_y_continuous</a></span><span class="op">(</span><span class="cn">NULL</span>, breaks <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="st">"kg of waste per person per day"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"Waste per person rises with income"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"One dot per household, with the median of each income level"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span></span>
+<span>    strip.text <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>face <span class="op">=</span> <span class="st">"bold"</span>, hjust <span class="op">=</span> <span class="fl">0</span>, size <span class="op">=</span> <span class="fl">11</span><span class="op">)</span>,</span>
+<span>    panel.grid.minor <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>    plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>face <span class="op">=</span> <span class="st">"bold"</span><span class="op">)</span>,</span>
+<span>    plot.title.position <span class="op">=</span> <span class="st">"plot"</span></span>
+<span>  <span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
@@ -1041,7 +1107,7 @@ Bulk density of the generated waste, in kilograms per litre; multiply by 1000 fo
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
 <p>Please cite this package using:</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"solidwastekampala"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite package 'solidwastekampala' in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -1060,8 +1126,8 @@ Bulk density of the generated waste, in kilograms per litre; multiply by 1000 fo
 <span><span class="co">#&gt;     year = {2026},</span></span>
 <span><span class="co">#&gt;     doi = {10.5281/zenodo.21519796},</span></span>
 <span><span class="co">#&gt;     url = {https://openwashdata.github.io/solidwastekampala/},</span></span>
-<span><span class="co">#&gt;     abstract = {Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).},</span></span>
-<span><span class="co">#&gt;     version = {1.0.1},</span></span>
+<span><span class="co">#&gt;     abstract = {Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the paper "Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors" (Katukiza et al. 2026, Frontiers in Environmental Science, &lt;https://doi.org/10.3389/fenvs.2026.1889921&gt;).},</span></span>
+<span><span class="co">#&gt;     version = {1.0.2},</span></span>
 <span><span class="co">#&gt;   }</span></span></code></pre></div>
 </div>
 </div>

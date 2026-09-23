@@ -1,6 +1,6 @@
 Package: solidwastekampala
 Title: Quantity and Composition of Domestic Solid Waste in Kampala City
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person(given = "Alex Y.", family = "Katukiza", role = "aut",
            comment = c(ORCID = "0000-0003-1774-8237")),
@@ -27,9 +27,10 @@ Description: Domestic solid waste generation and composition data for 103
     levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high
     income). Includes ten measured waste-category masses, derived
     per-household metrics, and household socio-economic characteristics.
-    The data accompany the manuscript "Quantity and Composition of
-    Domestic Solid Waste in Kampala City as Influenced by Socio-Economic
-    Factors" (Katukiza et al., Makerere University).
+    The data accompany the paper "Quantity and composition of domestic
+    solid waste in Kampala City as influenced by socioeconomic factors"
+    (Katukiza et al. 2026, Frontiers in Environmental Science,
+    <doi:10.3389/fenvs.2026.1889921>).
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -38,8 +39,8 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
-Date: 2026-09-17
+Config/Needs/website: rmarkdown, quarto
+Date: 2026-09-23
 URL: https://github.com/openwashdata/solidwastekampala,
     https://openwashdata.github.io/solidwastekampala/
 BugReports: https://github.com/openwashdata/solidwastekampala/issues

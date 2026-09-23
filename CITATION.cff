@@ -5,19 +5,20 @@
  
 cff-version: 1.2.0
 message: 'To cite package "solidwastekampala" in publications use:'
-type: software
+type: dataset
 license: CC-BY-4.0
 title: 'solidwastekampala: Quantity and Composition of Domestic Solid Waste in Kampala
   City'
-version: 1.0.1
+version: 1.0.2
 doi: 10.5281/zenodo.21519796
 abstract: Domestic solid waste generation and composition data for 103 households
   in Kampala City, Uganda, collected over a seven-day measurement campaign in three
   parishes representing different income levels (Bwaise I, low income; Bukoto I, middle
   income; Ggaba, high income). Includes ten measured waste-category masses, derived
   per-household metrics, and household socio-economic characteristics. The data accompany
-  the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City
-  as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).
+  the paper "Quantity and composition of domestic solid waste in Kampala City as influenced
+  by socioeconomic factors" (Katukiza et al. 2026, Frontiers in Environmental Science,
+  <https://doi.org/10.3389/fenvs.2026.1889921>).
 authors:
 - family-names: Katukiza
   given-names: Alex Y.
@@ -45,9 +46,34 @@ authors:
 - family-names: Manga
   given-names: Musa
   orcid: https://orcid.org/0000-0002-3317-7318
+references:
+- type: article
+  title: Quantity and composition of domestic solid waste in Kampala City as influenced
+    by socioeconomic factors
+  authors:
+  - family-names: Katukiza
+    given-names: Alex Y.
+  - family-names: Niwagaba
+    given-names: Charles B.
+  - family-names: Feni
+    given-names: Ivan
+  - family-names: Namagembe
+    given-names: Shaluwa
+  - family-names: Semiyaga
+    given-names: Swaib
+  - family-names: Batte
+    given-names: Abubakar
+  - family-names: Manga
+    given-names: Musa
+  journal: Frontiers in Environmental Science
+  volume: '14'
+  year: '2026'
+  doi: 10.3389/fenvs.2026.1889921
+  issn: 2296-665X
+  url: https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2026.1889921
 repository-code: https://github.com/openwashdata/solidwastekampala
 url: https://openwashdata.github.io/solidwastekampala/
-date-released: '2026-09-17'
+date-released: '2026-09-23'
 contact:
 - family-names: Schöbitz
   given-names: Lars

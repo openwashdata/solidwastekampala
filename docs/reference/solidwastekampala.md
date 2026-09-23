@@ -204,14 +204,16 @@ A tibble with 103 rows and 37 variables
 - density_kg_l:
 
   Bulk density of the generated waste, in kilograms per litre; multiply
-  by 1000 for kg/m3 as reported in the manuscript.
+  by 1000 for kg/m3 as reported in the paper.
 
 ## Source
 
 Data collected by the study team of Katukiza et al. (Makerere
-University) for the manuscript "Quantity and Composition of Domestic
-Solid Waste in Kampala City as Influenced by Socio-Economic Factors".
-Raw workbook preserved in `data-raw/data_sheets_with_analysis.xlsx`.
+University) for the paper "Quantity and composition of domestic solid
+waste in Kampala City as influenced by socioeconomic factors", Frontiers
+in Environmental Science 14 (2026),
+[doi:10.3389/fenvs.2026.1889921](https://doi.org/10.3389/fenvs.2026.1889921)
+. Raw workbook preserved in `data-raw/data_sheets_with_analysis.xlsx`.
 
 ## Examples
 

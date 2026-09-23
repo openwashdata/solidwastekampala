@@ -12,3 +12,4 @@
 ^CITATION\.cff$
 ^CLAUDE\.md$
 ^\.github$
+^vignettes$
