@@ -1,5 +1,20 @@
 # Changelog
 
+## solidwastekampala 1.0.2 (2026-09-23)
+
+- The paper behind the data is now published: Katukiza et al. (2026),
+  “Quantity and composition of domestic solid waste in Kampala City as
+  influenced by socioeconomic factors”, Frontiers in Environmental
+  Science 14, <doi:10.3389/fenvs.2026.1889921>. The README cites it at
+  the top with its BibTeX entry, and DESCRIPTION, the data
+  documentation, the dictionary, CITATION.cff, and inst/CITATION now
+  refer to the paper instead of the manuscript. CITATION.cff lists the
+  paper under `references`.
+- Added a dot plot of waste per person by income level to the top of the
+  README, replacing the boxplot in the example.
+- Added the article “Waste per person by income” with an interactive
+  version of the chart (Observable Plot in a Quarto article).
+
 ## solidwastekampala 1.0.1 (2026-09-17)
 
 - Added Alex Y. Katukiza’s ORCID iD, verified against the public
