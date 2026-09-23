@@ -25,6 +25,8 @@ socio-economic characteristics of the household and its dwelling. The
 package contains one analysis-ready dataset together with a full
 variable dictionary.
 
+<img src="man/figures/README-dotplot-per-capita-1.png" alt="Dot plot of waste per person per day for 103 households in Kampala, one row per income level. The median rises from 0.32 kg in the low income parish to 0.57 kg in the middle income parish and 0.93 kg in the high income parish." width="100%" style="display: block; margin: auto;" />
+
 ## Associated publication
 
 If you use these data, please cite the paper they belong to:
@@ -110,7 +112,7 @@ solidwastekampala |>
   gt::as_raw_html()
 ```
 
-<div id="bguqukvtxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rsyinnqcrl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -1073,12 +1075,12 @@ solidwastekampala |>
 #> 3 high                 32                0.98           325
 ```
 
-The figure below shows the households behind those numbers, one dot per
-household. Waste per person rises with the income level of the study
-area: the median goes from 0.32 kg per person per day in Bwaise I (low)
-to 0.57 kg in Bukoto I (middle) and 0.93 kg in Ggaba (high), where the
-spread across households is also widest. The article [Waste per person
-by
+The figure at the top of this page shows the households behind those
+numbers, one dot per household. Waste per person rises with the income
+level of the study area: the median goes from 0.32 kg per person per day
+in Bwaise I (low) to 0.57 kg in Bukoto I (middle) and 0.93 kg in Ggaba
+(high), where the spread across households is also widest. The code
+below reproduces it. The article [Waste per person by
 income](https://openwashdata.github.io/solidwastekampala/articles/waste-per-person.html)
 shows an interactive version of this chart.
 
@@ -1131,8 +1133,6 @@ ggplot(households, aes(x = waste_per_capita_kg)) +
   )
 ```
 
-<img src="man/figures/README-dotplot-per-capita-1.png" alt="" width="100%" style="display: block; margin: auto;" />
-
 ## License
 
 Data are available as
@@ -1149,8 +1149,8 @@ citation("solidwastekampala")
 #>   Katukiza A, Niwagaba C, Feni I, Namagembe S, Semiyaga S, Batte A,
 #>   Schöbitz L, Manga M (2026). "solidwastekampala: Quantity and
 #>   Composition of Domestic Solid Waste in Kampala City."
-#>   doi:10.5281/zenodo.21519796
-#>   <https://doi.org/10.5281/zenodo.21519796>.
+#>   doi:10.5281/zenodo.21519797
+#>   <https://doi.org/10.5281/zenodo.21519797>.
 #>   <https://openwashdata.github.io/solidwastekampala/>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -1159,9 +1159,9 @@ citation("solidwastekampala")
 #>     title = {solidwastekampala: Quantity and Composition of Domestic Solid Waste in Kampala City},
 #>     author = {Alex Y. Katukiza and Charles B. Niwagaba and Ivan Feni and Shaluwa Namagembe and Swaib Semiyaga and Abubakar Batte and Lars Schöbitz and Musa Manga},
 #>     year = {2026},
-#>     doi = {10.5281/zenodo.21519796},
+#>     doi = {10.5281/zenodo.21519797},
 #>     url = {https://openwashdata.github.io/solidwastekampala/},
-#>     abstract = {Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the paper "Quantity and composition of domestic solid waste in Kampala City as influenced by socioeconomic factors" (Katukiza et al. 2026, Frontiers in Environmental Science, <https://doi.org/10.3389/fenvs.2026.1889921>).},
-#>     version = {1.0.1},
+#>     abstract = {Domestic solid waste generation and composition data for 103 households in Kampala City, Uganda, collected over a seven-day measurement campaign in three parishes representing different income levels (Bwaise I, low income; Bukoto I, middle income; Ggaba, high income). Includes ten measured waste-category masses, derived per-household metrics, and household socio-economic characteristics. The data accompany the manuscript "Quantity and Composition of Domestic Solid Waste in Kampala City as Influenced by Socio-Economic Factors" (Katukiza et al., Makerere University).},
+#>     version = {1.0.0},
 #>   }
 ```
