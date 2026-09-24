@@ -1,0 +1,5 @@
+/* Quarto articles mark hidden code cells with .hidden (echo: false), a
+   class that the pkgdown Bootstrap theme does not define. */
+.hidden {
+  display: none;
+}
