@@ -39,8 +39,11 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown, quarto
+Config/Needs/website: rmarkdown, quarto, dplyr
 Date: 2026-09-23
 URL: https://github.com/openwashdata/solidwastekampala,
     https://openwashdata.github.io/solidwastekampala/
 BugReports: https://github.com/openwashdata/solidwastekampala/issues
+X-schema.org-keywords: open data, washdata, solid waste, household waste, waste generation, waste composition, Kampala, Uganda
+X-schema.org-spatialCoverage: Kampala, Uganda
+X-schema.org-temporalCoverage: 2025-01-14/2025-03-13
