@@ -348,8 +348,8 @@
 <li>Analysis, validation, and testing scripts live in <code>analysis/</code> at the package root. They are intentionally outside <code>R/</code> and are not built into the installed package. Do not move or delete them; they exist for reproducibility.</li>
 <li>The license is CC BY 4.0. Do not change it.</li>
 <li>Missing values are coded as <code>NA</code>, never as empty strings, “NULL”, “N/A”, or sentinel numbers such as -99.</li>
-<li>After editing DESCRIPTION, run <code>washr::update_description()</code>. Caveat (washr 1.0.1): it strips <code>Config/Needs/website</code> entries; diff DESCRIPTION after the call and restore anything it removed.</li>
-<li>After version or author changes, run <code>washr::update_citation()</code> so DESCRIPTION, CITATION.cff, and inst/CITATION stay in sync. Caveats (washr 1.0.1): the <code>doi</code> argument is required, so call it with the package DOI or <code>doi = NULL</code> before a DOI exists; with <code>doi = NULL</code> it can inject a broken empty badge (<code>zenodo.org/badge/DOI/.svg</code>) into README.Rmd, which must be removed; and it leaves <code>inst/CITATION.bk1</code> backup files that must not be committed.</li>
+<li>After editing DESCRIPTION, run <code>washr::update_description()</code>.</li>
+<li>After version or author changes, run <code>washr::update_citation()</code> so DESCRIPTION, CITATION.cff, and inst/CITATION stay in sync. It keeps a DOI already on file and owns the DOI badge in README.Rmd. washr 1.1.0 or newer is the floor for these calls.</li>
 <li>Raw data stays in <code>data-raw/</code>, processed <code>.rda</code> data in <code>data/</code>, and CSV/XLSX exports in <code>inst/extdata/</code>. <code>data-raw/dictionary.csv</code> documents all variables.</li>
 </ul></div>
 <div class="section level2">
