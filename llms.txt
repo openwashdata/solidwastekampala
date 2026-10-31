@@ -1,5 +1,7 @@
 # solidwastekampala
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The solidwastekampala package provides the household-level data behind
 the paper “Quantity and composition of domestic solid waste in Kampala
 City as influenced by socioeconomic factors” by Katukiza et al. (2026),
