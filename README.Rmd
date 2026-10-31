@@ -32,6 +32,8 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21519796.svg)](https://zenodo.org/doi/10.5281/zenodo.21519796)
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The solidwastekampala package provides the household-level data behind
 the paper "Quantity and composition of domestic solid waste in Kampala
 City as influenced by socioeconomic factors" by Katukiza et al. (2026),
