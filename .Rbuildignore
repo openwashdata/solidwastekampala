@@ -13,3 +13,5 @@
 ^CLAUDE\.md$
 ^\.github$
 ^vignettes$
+^_brand\.yml$
+^logos$
